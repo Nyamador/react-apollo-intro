@@ -1,9 +1,10 @@
 import logo from '../logo.svg';
+import CreateLink from './createLink';
 import '../styles/App.css';
 import LinkList from './LinkList';
 
-function App() {
-	return <LinkList />;
-}
+const App = () => {
+	return <CreateLink />;
+};
 
 export default App;
