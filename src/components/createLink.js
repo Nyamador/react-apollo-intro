@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useMutation, gql } from '@apollo/client';
 
 const CREATE_LINK_MUTATION = gql`
@@ -45,10 +45,6 @@ const CreateLink = () => {
 								description: e.target.value,
 							})
 						}
-					/>
-					<input
-						className="mb2"
-						placeholder="A description for the link"
 					/>
 					<input
 						className="mb2"
